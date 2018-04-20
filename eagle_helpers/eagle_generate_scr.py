@@ -18,6 +18,9 @@ PARTS = 'C1, C15, C16, C17, C18, C21'
 #PARTS = 'C103, C205, C207, C703, C903'
 PARTS = 'C209, C506, C509, C510, C704, C705, C706, C816, C819, C904, C905, C906, C1013, C1016, C1412, C1415'
 
+
+PARTS = 'jp2, jp3, jp4, jp5, jp6, jp7, jp8, jp9, jp10, jp11, jp12, jp16'
+
 def main():
 	print('create eagle script to change package')
 	
@@ -25,8 +28,12 @@ def main():
 	print('--------------------------------------------------------------')
 	for part in PARTS.split(','):
 		#print('VALUE {:s} \'1u 25V X7R\';'.format(part))
-		print('VALUE {:s} \'1u 25V X7R\';'.format(part))
+		#print('VALUE {:s} \'1u 25V X7R\';'.format(part))
 		#print('CHANGE PACKAGE {:s} C0603K;'.format(part))
+		
+		print('change display off;')
+		print('attribute {:s} COMMENT \'3Pin / 2.54mm\';'.format(part))
+		# attribute rv1 OC_FARNELL '2808092';
 
 	print('--------------------------------------------------------------')
 
