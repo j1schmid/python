@@ -1,9 +1,10 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from __future__ import print_function
 import sys
+
 #import code # entering the interactive mode at a certain point: code.interact(local=dict(globals(), **locals())), Ctrl+D and the script goes on
+
 
 usage_str='''
 Usage: ./eagle_bom_to_ssp.py FILE
